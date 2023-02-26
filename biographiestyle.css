@@ -1,0 +1,291 @@
+*{
+margin:0px;
+padding:0px;
+
+}
+
+/****************************************les paragraphes***********************************/
+section {
+margin-left: 300px;/*reglage de la position des paragraphes*/
+margin-right: 5px;
+padding: 15px;
+width: 75%;
+font-family: Helvetica;/*reglage du texte des paragraphes*/
+font-size: 18px;
+}
+
+
+/****************************************premiere lettre d'un paragraphe***********************************/
+p::first-letter {
+color: rgba(214, 0, 121, 1); 
+float: left;
+font-size: 5em;
+margin: 0 .2em 0 0;
+
+
+}
+/*******************************************separateur****************************************************/
+hr
+{    margin-top: 0px;
+height: 2px;
+background-color: rgba(214, 0, 121, 1);
+color: rgba(214, 0, 121, 1);
+border-color: rgba(214, 0, 121, 1);
+}
+span {/************************************decoration des titres de paragraphes******************************/
+color: white;/*couleur*/
+background-color: rgba(214, 0, 121, 1); /*couleur du background*/
+font-size: 30px;/*reglage du texte*/	
+}
+
+/****************************************figures et figcaption**********************/
+figure {
+display: inline-block;/*alignement*/
+border: black;/*couleur des bordures*/
+margin: 20px; /* marge */
+}
+figure img {
+vertical-align: top;/*position*/
+}
+figure figcaption {/*legende des images*/
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;/*position du texte*/
+color: black;/*couleur du texte*/
+background-color: white;/*couleur du fond*/
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width: 80%;	/*taille*/
+}
+
+
+/****************************************les images**********************/
+img{
+height: 80%;/*taille*/
+width: 80%;	
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/*decoration*/
+}
+
+
+/****************************************************les asides*************************************/
+
+.aside1 {	/*concernant la carte d'identité*/
+margin-top: 40px;/*reglage des marges*/
+margin-bottom: 20px;
+margin-left: .1rem;
+margin-right: .3rem;
+float: right;/*reglage position*/
+width: 30%;/*reglage taille*/
+box-shadow: inset 5px 5px 0 -5px rgba(214, 0, 121, 1);/*decoration*/     
+}
+
+
+.aside3 {  /*concernant la galerie d'images alignées*/   
+float: left;/*position*/
+margin-right:-4px; /*marge*/	
+}
+
+
+.aside2 {/*le reste des images au milieu des paragraphes*/
+width: 30%;  
+margin-left: 20px;
+
+margin-bottom: 20px;
+float: right;
+}
+
+
+
+/***************************************les listes*************************************/
+#ul
+{	
+padding-left: 20px;	/*position*/
+}
+
+#ul li::before {
+content: "\2022";  
+color: rgba(214, 0, 121, 1);
+font-weight: bold; 
+display: inline-block; 
+width: 1em; 
+margin-left: -1em; 
+}
+
+/****************************************carte d'identité***************************************/
+.card {
+box-shadow: 0 8px 8px 10px rgba(87, 84, 84, 0.4);/*decoration*/
+max-width: 700px;
+padding: 20px;
+margin-left: 30px;
+text-align: center;/*position du texte*/
+background-color: white;
+}
+/*************************************images******************************/ 
+#img1 {/*carte d'identité*/
+width: 80%;/*taille de l'image*/
+border: 2px solid rgba(214, 0, 121, 1);/*bordure*/
+border-radius: 80%;
+}
+#img3/*drapeaux*/
+{
+width: 15px;
+height: 10px;
+
+} 
+#img2{/*logo*/
+margin-top: 10px;
+float: right;
+width:130px;
+height: 130px;
+}
+#img4{/*image de la partie oeuvres*/
+width:250px;
+height: 300px;	
+}
+/*******************************************menu(gauche)***********************************************/ 
+
+
+
+#vertmenu li li a:link, #vertmenu li li a:visited {
+font-weight: normal;
+background: black;
+margin-left: 40px;
+color: rgba(214, 0, 121, 1);
+text-decoration:none;
+
+}
+#vertmenu li a:link, #vertmenu li a:visited 
+{   text-decoration:none;
+color: white;
+text-align: center;
+font-size:18px;
+
+
+}
+
+#vertmenu li li a:hover {
+padding: 2px 0 3px 25px;
+color: white;
+width:135px;
+text-decoration:none;
+
+}  
+#vertmenu/*reglages du menu gauche*/
+{
+text-decoration:none;
+position: fixed;
+width: 260px ;
+background: black;
+height:100vh;
+padding-top: 15px;
+margin-top: 0px;
+word-spacing: normal;
+
+
+}/*haut menu*/
+
+#navigation{
+width: 90%;
+max-width: 100%;
+margin-left:260px ;
+}
+
+/************************************************le footer***********************/	  
+footer{ 
+
+background: black;/*couleur du footer*/
+padding-left:40px;
+color: #FFF;
+margin-top: 100px;/*position*/
+margin-left: 260px;
+height: 150px;
+right: 0;
+width: 78.4%;
+font-size:18px;
+
+}
+.footer-list-top::first-letter{
+color:transparent;}
+
+.footer-list-top{ /*partie infos*/
+margin-top: 20px;
+float: right;
+font-size: 16px;
+text-align:left ;
+margin-right: 50px;
+margin-left: 50px;}
+
+/*icones des réseaux sociaux*/
+footer .icons {
+display: inline-block;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+
+}
+
+footer .icons .fa {
+font-size: 30px;
+padding: 10px;
+color: rgba(214, 0, 121, 1);
+}
+/***************les images de la partie hommages**********************/ 
+.rightmenu,
+.aside3
+{
+display: inline-block;
+
+} 
+
+
+.one,.two,.three{float: right;
+margin-bottom: 50px;
+width :30%;
+
+}	  
+.galerie{
+margin-top: 50px;
+margin-bottom: 100px;
+}
+.galerie2{
+margin-top: 50px;
+margin-right: 220px;
+margin-bottom: 300px;	
+}
+/**********************************************titre principale de chaque page**********************/
+.debut{
+
+background-color: white;
+height: 100px;
+background-image: url('figures/fr.png');
+background-repeat: repeat-y;
+margin-left: 300px;/*position*/
+margin-top: 30px;
+margin-bottom: 40px;
+width: 52%;    
+padding-top: 40px;
+padding-bottom: 0px;
+padding-left: 300px;
+color: black;/*reglages du texte*/
+font-size: 36px;
+text-align: bottom;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/*decoration*/
+
+}
+
+
+/*************************************les liens*********************************/
+a:visited {/*liens deja visités*/
+text-decoration: none;
+color: #80064B;
+}
+
+p a:hover /*mettre la souris en dessus*/
+{
+color: #AF1F74
+
+}	
+a:link {/*apparence generale*/
+text-decoration: none;
+color: rgba(214, 0, 121, 1);
+}  
+

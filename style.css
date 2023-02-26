@@ -1,0 +1,105 @@
+*{
+margin:0px;
+padding:0px;
+
+}
+
+/********************************reglages de la page************************/
+.bgimage{
+background-color: rgba(0, 0, 0, 1);/*couleur de 1/2 de l'ecran*/
+width: 100%;
+height: 100vh;
+background-image: url('figures/b.jpg');/*image de fond du demi restant*/
+background-position: right;/*position*/
+background-repeat: repeat-y;
+background-size: 50% auto;	
+}
+
+
+/*********************************menu*****************************/
+#navigation {/*reglages generaux du menu haut*/
+
+
+background: #000;
+height: 3em;
+list-style: none;
+
+
+
+}
+
+#navigation > li {/*reglage des titre*/
+float: right;
+height: 100%;
+padding: 0 1em;
+
+}
+
+
+#navigation > li > a {/*reglages des links*/
+float: left;
+height: 100%;
+color: rgba(214, 0, 121, 1);
+text-decoration: none;
+line-height: 3;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+#navigation > li > a:hover {/*hover*/
+color: rgba(214, 0, 121, 1);
+text-decoration: underline;
+}
+/*sous sous-titres*/
+#navigation > li.sub {
+position: relative;
+}
+
+
+#navigation > li.sub ul {
+width: 10em;
+margin: 0;
+padding: 0.5em 0;
+list-style: none;
+background: rgba(214, 0, 121, 1);
+position: absolute;
+top: -1000em;
+}
+
+#navigation > li.sub ul li {
+width: 90%;
+margin: 0 auto 0.3em auto;
+}
+
+#navigation > li.sub ul li a {
+height: 100%;
+display: block;
+padding: 0.4em;
+color: #fff;
+font-weight: bold;
+text-decoration: none;
+}
+/*sous-titres hover*/
+#navigation > li.sub ul li a:hover {
+background: #000;
+text-decoration: underline;
+}
+
+#navigation > li.sub:hover ul {
+top: 3em;
+}
+/*icones avant les titres*/
+i{
+
+border-radius: 40xp;
+width: 100xp;
+float: left;
+margin-top: 15px;
+margin-right: 5px;
+
+
+}
+
+
+
+
